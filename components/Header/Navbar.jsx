@@ -24,6 +24,7 @@ const Navbar = () => {
                         alt='audiophile'
                         width={145}
                         height={25}
+                        priority={true}
                     />
                 </Link>
 

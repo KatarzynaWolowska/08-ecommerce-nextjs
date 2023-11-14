@@ -1,0 +1,17 @@
+$orange-light: #fbaf85;
+$orange-dark: #d87d4a;
+$bg-primary: #fafafa;
+$bg-secondary: #f1f1f1;
+$bg-dark: #101010;
+$black: #000;
+$white: #fff;
+
+:export {
+    primaryColor: $orange-light;
+    secondaryColor: $orange-dark;
+    bgPrimary: $bg-primary;
+    bgSecondary: $bg-secondary;
+    bgDark: $bg-dark;
+    black: $black;
+    white: $white;
+}
