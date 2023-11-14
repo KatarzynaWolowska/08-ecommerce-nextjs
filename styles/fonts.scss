@@ -61,6 +61,7 @@ h6,
 .overline,
 .subtitle {
     text-transform: uppercase;
+    margin: 2rem 0 1rem;
 }
 
 h1,
@@ -76,4 +77,11 @@ p {
     font-size: 0.938rem;
     line-height: 1.563rem;
     font-weight: 400;
+}
+
+button {
+    font-size: 0.813rem;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 1px;
 }

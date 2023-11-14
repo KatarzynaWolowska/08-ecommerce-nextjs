@@ -1,3 +1,4 @@
+import Button from '@/components/Base/Button'
 import Wrapper from '@/components/Base/Wrapper'
 
 const Home = () => {
@@ -49,6 +50,9 @@ const Home = () => {
                 vel tellus. Suspendisse laoreet. Fusce ut est sed dolor gravida
                 convallis.
             </p>
+            <Button variant='contained'>See product</Button>
+            <Button variant='outlined'>Button</Button>
+            <Button variant='text'>Button</Button>
         </Wrapper>
     )
 }

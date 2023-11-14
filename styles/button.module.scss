@@ -1,0 +1,55 @@
+@import 'colors.module';
+
+@mixin reset-button {
+    display: inline-block;
+    border: none;
+    padding: 1.1rem 2.35rem;
+    margin: 2rem;
+    margin-left: 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 400ms ease-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.contained {
+    @include reset-button;
+    background-color: $orange-dark;
+    color: $white;
+    &:hover {
+        background-color: $orange-light;
+    }
+}
+
+.outlined {
+    @include reset-button;
+    background-color: transparent;
+    outline: 1px solid black;
+    outline-color: $black;
+    outline-offset: -1px;
+    &:hover {
+        background-color: $black;
+        color: $white;
+    }
+}
+
+.text {
+    @include reset-button;
+    background: none;
+    padding-right: 20px;
+    position: relative;
+    padding-left: 0;
+    &:after {
+        content: url('../public/arrow.svg');
+        display: block;
+        width: 5px;
+        height: 10px;
+        position: absolute;
+        right: 0;
+        top: calc(50% - 5px);
+    }
+    &:hover {
+        opacity: 0.75;
+    }
+}
