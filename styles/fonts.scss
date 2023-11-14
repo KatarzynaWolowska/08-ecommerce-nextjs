@@ -1,3 +1,5 @@
+@import 'colors.module';
+
 h1 {
     font-size: 3.5rem;
     line-height: 3.625rem;
@@ -39,13 +41,15 @@ h6 {
     line-height: 1.188rem;
     letter-spacing: 0.625rem;
     font-weight: 400;
+    color: $orange-dark;
 }
 
 .subtitle {
-    font-size: 0.875rem;
-    line-height: 1.188rem;
+    font-size: 0.813rem;
+    line-height: 1.563rem;
     letter-spacing: 0.063rem;
     font-weight: 700;
+    color: $orange-dark;
 }
 
 h1,
