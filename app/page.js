@@ -1,7 +1,7 @@
-import styles from './page.module.css'
+import Wrapper from '@/components/Base/Wrapper'
 
 const Home = () => {
-    return <main className={styles.main}>Homepage</main>
+    return <Wrapper>Homepage</Wrapper>
 }
 
 export default Home
