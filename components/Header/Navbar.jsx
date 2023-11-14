@@ -1,8 +1,9 @@
 import Image from 'next/image'
+import Link from 'next/link'
+import colors from '../../styles/colors.module.scss'
 import audiophile from '../../public/audiophile.svg'
 import ButtonBasket from './ButtonBasket'
 import Wrapper from '../Base/Wrapper'
-import Link from 'next/link'
 
 const Navbar = () => {
     return (
@@ -10,7 +11,7 @@ const Navbar = () => {
             style={{
                 display: 'flex',
                 height: '97px',
-                background: '#141414'
+                background: colors.bgDark
             }}>
             <Wrapper
                 style={{

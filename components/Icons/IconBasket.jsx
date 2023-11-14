@@ -1,4 +1,4 @@
-import colors from '../../styles/colors.scss'
+import colors from '../../styles/colors.module.scss'
 
 const IconBasket = ({ isHover }) => {
     return (
