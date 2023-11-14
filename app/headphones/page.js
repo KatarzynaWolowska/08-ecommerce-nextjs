@@ -1,4 +1,4 @@
-import Wrapper from '@/components/Base/Wrapper'
+import Wrapper from '@/components/Wrapper/Wrapper'
 
 const Headphones = () => {
     return <Wrapper>Headphones</Wrapper>

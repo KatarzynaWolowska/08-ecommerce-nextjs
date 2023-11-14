@@ -1,4 +1,4 @@
-import styles from '../../styles/button.module.scss'
+import styles from './Button.module.scss'
 
 const Button = ({ children, variant, onClick, ...props }) => {
     return (

@@ -1,5 +1,5 @@
-import Button from '@/components/Base/Button'
-import Wrapper from '@/components/Base/Wrapper'
+import Button from '@/components/Button/Button'
+import Wrapper from '@/components/Wrapper/Wrapper'
 
 const Home = () => {
     return (

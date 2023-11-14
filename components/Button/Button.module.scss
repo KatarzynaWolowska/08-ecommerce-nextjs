@@ -1,16 +1,9 @@
-@import 'colors.module';
+@import '../../styles/colors.module.scss';
 
 @mixin reset-button {
-    display: inline-block;
-    border: none;
     padding: 1.1rem 2.35rem;
     margin: 2rem;
     margin-left: 0;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 400ms ease-out;
-    -webkit-appearance: none;
-    -moz-appearance: none;
 }
 
 .contained {
@@ -41,7 +34,7 @@
     position: relative;
     padding-left: 0;
     &:after {
-        content: url('../public/arrow.svg');
+        content: url('../../public/arrow.svg');
         display: block;
         width: 5px;
         height: 10px;

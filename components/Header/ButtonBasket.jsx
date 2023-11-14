@@ -15,14 +15,7 @@ const ButtonBasket = () => {
     }
 
     return (
-        <button
-            style={{
-                backgroundColor: 'transparent',
-                border: 'none',
-                cursor: 'pointer'
-            }}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+        <button onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <IconBasket isHover={isHover} />
         </button>
     )
