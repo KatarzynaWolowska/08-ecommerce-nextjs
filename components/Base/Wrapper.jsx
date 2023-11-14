@@ -1,10 +1,8 @@
 const Wrapper = ({ children, style }) => {
     return (
         <div
+            className='wrapper'
             style={{
-                width: '100%',
-                maxWidth: '1100px',
-                margin: 'auto',
                 ...style
             }}>
             {children}
