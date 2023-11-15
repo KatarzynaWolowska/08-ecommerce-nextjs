@@ -7,7 +7,7 @@ const Logo = () => {
         <Link href='/'>
             <Image
                 src={audiophile}
-                alt='audiophile'
+                alt='Audiophile'
                 width={145}
                 height={25}
                 priority={true}
