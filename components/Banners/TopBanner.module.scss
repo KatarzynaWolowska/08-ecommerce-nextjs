@@ -1,0 +1,29 @@
+@import 'breakpoints';
+@import 'colors.module';
+
+.topBanner {
+    display: flex;
+    text-align: center;
+    color: $white;
+    height: 645px;
+    margin-bottom: 40px;
+    background: #141414 url('../../public/background-mobile.png') no-repeat
+        bottom center;
+
+    .overline,
+    p {
+        color: $gray;
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .topBanner {
+        text-align: left;
+        background-image: url('../../public/background.png');
+        height: 633px;
+
+        .column {
+            width: 40%;
+        }
+    }
+}
