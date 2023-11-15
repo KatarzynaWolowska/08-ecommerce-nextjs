@@ -25,6 +25,9 @@
         background-color: $black;
         color: $white;
     }
+    &:focus {
+        outline: -webkit-focus-ring-color auto 1px;
+    }
 }
 
 .text {
