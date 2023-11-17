@@ -1,4 +1,4 @@
-@import '../../styles/colors.module.scss';
+@use 'colors.module' as colors;
 
 button.solid,
 button.outline,
@@ -11,21 +11,21 @@ button.link {
 }
 
 .solid {
-    background-color: $orange-dark;
-    color: $white;
+    background-color: colors.$orange-dark;
+    color: colors.$white;
     &:hover {
-        background-color: $orange-light;
+        background-color: colors.$orange-light;
     }
 }
 
 .outline {
     background-color: transparent;
     outline: 1px solid black;
-    outline-color: $black;
+    outline-color: colors.$black;
     outline-offset: -1px;
     &:hover {
-        background-color: $black;
-        color: $white;
+        background-color: colors.$black;
+        color: colors.$white;
     }
     &:focus {
         outline: -webkit-focus-ring-color auto 1px;

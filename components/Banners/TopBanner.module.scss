@@ -1,10 +1,10 @@
-@import 'breakpoints';
-@import 'colors.module';
+@use 'breakpoints';
+@use 'colors.module' as colors;
 
 .topBanner {
     display: flex;
     text-align: center;
-    color: $white;
+    color: colors.$white;
     height: 645px;
     margin-bottom: 40px;
     background: #141414 url('../../public/background-mobile.png') no-repeat
@@ -12,11 +12,11 @@
 
     .overline,
     p {
-        color: $gray;
+        color: colors.$gray;
     }
 }
 
-@media (min-width: $breakpoint-desktop) {
+@media (min-width: breakpoints.$breakpoint-desktop) {
     .topBanner {
         text-align: left;
         background-image: url('../../public/background.png');
