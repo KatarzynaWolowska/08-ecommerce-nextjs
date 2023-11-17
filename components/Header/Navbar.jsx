@@ -1,6 +1,6 @@
 import colors from '../../styles/colors.module.scss'
+import Wrapper from '@/components/Wrapper/Wrapper'
 import ButtonBasket from './ButtonBasket'
-import Wrapper from '../Wrapper/Wrapper'
 import Logo from './Logo'
 
 const Navbar = () => {

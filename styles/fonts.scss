@@ -1,4 +1,4 @@
-@import 'colors.module';
+@use 'colors.module' as colors;
 
 h1 {
     font-size: 3.5rem;
@@ -41,7 +41,7 @@ h6 {
     line-height: 1.188rem;
     letter-spacing: 0.625rem;
     font-weight: 400;
-    color: $orange-dark;
+    color: colors.$orange-dark;
 }
 
 .subtitle {
@@ -49,7 +49,7 @@ h6 {
     line-height: 1.563rem;
     letter-spacing: 0.063rem;
     font-weight: 700;
-    color: $orange-dark;
+    color: colors.$orange-dark;
 }
 
 h1,
@@ -61,7 +61,7 @@ h6,
 .overline,
 .subtitle {
     text-transform: uppercase;
-    margin: 2rem 0 1rem;
+    padding: 0 0 2rem;
 }
 
 h1,

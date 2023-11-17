@@ -1,37 +1,38 @@
-@import '../../styles/colors.module.scss';
+@use 'colors.module' as colors;
 
-@mixin reset-button {
-    padding: 1.1rem 2.35rem;
+button.solid,
+button.outline,
+button.link {
+    padding: 1.1rem 2.3rem;
     margin: 2rem;
     margin-left: 0;
+    min-width: 160px;
+    height: 48px;
 }
 
-.contained {
-    @include reset-button;
-    background-color: $orange-dark;
-    color: $white;
+.solid {
+    background-color: colors.$orange-dark;
+    color: colors.$white;
     &:hover {
-        background-color: $orange-light;
+        background-color: colors.$orange-light;
     }
 }
 
-.outlined {
-    @include reset-button;
+.outline {
     background-color: transparent;
     outline: 1px solid black;
-    outline-color: $black;
+    outline-color: colors.$black;
     outline-offset: -1px;
     &:hover {
-        background-color: $black;
-        color: $white;
+        background-color: colors.$black;
+        color: colors.$white;
     }
     &:focus {
         outline: -webkit-focus-ring-color auto 1px;
     }
 }
 
-.text {
-    @include reset-button;
+.link {
     background: none;
     padding-right: 20px;
     position: relative;
