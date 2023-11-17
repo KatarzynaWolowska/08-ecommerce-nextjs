@@ -33,6 +33,8 @@ button.link {
 }
 
 .link {
+    color: colors.$gray;
+    text-transform: uppercase;
     background: none;
     padding-right: 20px;
     position: relative;
@@ -47,6 +49,7 @@ button.link {
         top: calc(50% - 5px);
     }
     &:hover {
-        opacity: 0.75;
+        color: colors.$orange-dark;
+        transition: all 400ms ease-out;
     }
 }
