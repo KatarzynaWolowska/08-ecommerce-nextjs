@@ -1,8 +1,8 @@
 @import '../../styles/colors.module.scss';
 
-button.contained,
-button.outlined,
-button.text {
+button.solid,
+button.outline,
+button.link {
     padding: 1.1rem 2.3rem;
     margin: 2rem;
     margin-left: 0;
@@ -10,7 +10,7 @@ button.text {
     height: 48px;
 }
 
-.contained {
+.solid {
     background-color: $orange-dark;
     color: $white;
     &:hover {
@@ -18,7 +18,7 @@ button.text {
     }
 }
 
-.outlined {
+.outline {
     background-color: transparent;
     outline: 1px solid black;
     outline-color: $black;
@@ -32,7 +32,7 @@ button.text {
     }
 }
 
-.text {
+.link {
     background: none;
     padding-right: 20px;
     position: relative;
