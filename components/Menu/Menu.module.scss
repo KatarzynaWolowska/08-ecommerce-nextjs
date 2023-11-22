@@ -1,0 +1,29 @@
+@use 'breakpoints';
+@use 'colors.module' as colors;
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    text-align: center;
+
+    @media (min-width: breakpoints.$breakpoint-tablet) {
+        flex-direction: row;
+    }
+
+    a:hover p {
+        color: colors.$orange-dark;
+    }
+
+    li p {
+        color: colors.$white;
+        font-size: 0.8125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5625rem;
+        letter-spacing: 0.125rem;
+        text-transform: uppercase;
+    }
+}

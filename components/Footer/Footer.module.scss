@@ -1,0 +1,53 @@
+@use 'breakpoints';
+@use 'colors.module' as colors;
+
+.footer {
+    background-color: colors.$bg-dark;
+    color: colors.$gray;
+    margin-top: auto;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 48px;
+        margin: 48px auto;
+
+        @media (min-width: breakpoints.$breakpoint-tablet) {
+            text-align: left;
+        }
+
+        .logo {
+            margin-bottom: 48px;
+        }
+
+        p {
+            color: colors.$gray;
+            @media (min-width: breakpoints.$breakpoint-desktop) {
+                max-width: 600px;
+            }
+        }
+
+        .topSection {
+            @media (min-width: breakpoints.$breakpoint-tablet) {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .bottomSection {
+            @media (min-width: breakpoints.$breakpoint-tablet) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .socialmedia {
+                margin-top: 48px;
+                @media (min-width: breakpoints.$breakpoint-tablet) {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
