@@ -1,5 +1,5 @@
 import CategoryList from '@/components/Categories/CategoryList'
-import TopBanner from '@/components/Banners/TopBanner'
+import TopBanner from '@/components/Banners/TopBanner/TopBanner'
 import Wrapper from '@/components/Wrapper/Wrapper'
 
 const Home = () => {

@@ -7,7 +7,7 @@
     color: colors.$white;
     height: 645px;
     margin-bottom: 40px;
-    background: #141414 url('../../public/background-mobile.png') no-repeat
+    background: #141414 url('../../../public/background-mobile.png') no-repeat
         bottom center;
 
     .overline,
@@ -19,7 +19,7 @@
 @media (min-width: breakpoints.$breakpoint-desktop) {
     .topBanner {
         text-align: left;
-        background-image: url('../../public/background.png');
+        background-image: url('../../../public/background.png');
         height: 633px;
 
         .column {
