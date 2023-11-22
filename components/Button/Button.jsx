@@ -1,5 +1,6 @@
 import styles from './Button.module.scss'
 import BUTTON_VARIANTS from '@/constants/ButtonVariant'
+import Link from 'next/link'
 
 const Button = ({
     children,
@@ -8,9 +9,20 @@ const Button = ({
     ...props
 }) => {
     return (
-        <button className={styles[variant]} onClick={onClick} {...props}>
-            {children}
-        </button>
+        <>
+            {props.href ? (
+                <Link className={styles[variant]} href={props.href}>
+                    {children}
+                </Link>
+            ) : (
+                <button
+                    className={styles[variant]}
+                    onClick={onClick}
+                    {...props}>
+                    {children}
+                </button>
+            )}
+        </>
     )
 }
 

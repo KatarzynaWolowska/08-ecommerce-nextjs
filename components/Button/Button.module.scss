@@ -1,13 +1,19 @@
 @use 'colors.module' as colors;
 
-button.solid,
-button.outline,
-button.link {
-    padding: 1.1rem 2.3rem;
+.solid,
+.outline,
+.link {
+    display: inline-block;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
     margin: 2rem;
     margin-left: 0;
+}
+
+.solid,
+.outline {
     min-width: 160px;
-    height: 48px;
 }
 
 .solid {
@@ -46,7 +52,7 @@ button.link {
         height: 10px;
         position: absolute;
         right: 0;
-        top: calc(50% - 5px);
+        top: 2px;
     }
     &:hover {
         color: colors.$orange-dark;
