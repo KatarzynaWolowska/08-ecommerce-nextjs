@@ -1,0 +1,52 @@
+.animation {
+    position: absolute;
+    left: -135px;
+    top: -36px;
+}
+
+.animation div {
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+
+    &.animation1 {
+        height: 900px;
+        width: 900px;
+        top: 0px;
+        left: 0px;
+        animation: growUp 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
+    &.animation2 {
+        height: 600px;
+        width: 600px;
+        top: 150px;
+        left: 150px;
+        animation: growUp 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
+    &.animation3 {
+        height: 450px;
+        width: 450px;
+        top: 225px;
+        left: 225px;
+        animation: growUp 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes growUp {
+    0% {
+        transform: scale(0.3);
+        opacity: 0.75;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
