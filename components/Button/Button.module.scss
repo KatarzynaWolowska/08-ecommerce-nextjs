@@ -2,17 +2,18 @@
 
 .solid,
 .outline,
-.link {
+.link,
+.black {
     display: inline-block;
     text-align: center;
     height: 48px;
     line-height: 48px;
-    margin: 2rem;
-    margin-left: 0;
+    margin: 2rem 0;
 }
 
 .solid,
-.outline {
+.outline,
+.black {
     min-width: 160px;
 }
 
@@ -21,6 +22,14 @@
     color: colors.$white;
     &:hover {
         background-color: colors.$orange-light;
+    }
+}
+
+.black {
+    background-color: black;
+    color: colors.$white;
+    &:hover {
+        background-color: #4c4c4c;
     }
 }
 

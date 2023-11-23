@@ -11,7 +11,7 @@ const Button = ({
     return (
         <>
             {props.href ? (
-                <Link className={styles[variant]} href={props.href}>
+                <Link className={styles[variant]} href={props.href} {...props}>
                     {children}
                 </Link>
             ) : (

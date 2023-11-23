@@ -1,0 +1,66 @@
+@use 'breakpoints';
+@use 'variables';
+@use 'colors.module' as colors;
+
+.mainBanner {
+    text-align: center;
+    padding: 52px 20px 64px;
+    background-color: colors.$orange-dark;
+    border-radius: variables.$border-radius;
+    position: relative;
+    overflow: hidden;
+
+    @media (min-width: breakpoints.$breakpoint-desktop) {
+        min-height: 560px;
+        text-align: left;
+        .column {
+            width: 40%;
+            float: right;
+        }
+    }
+
+    p,
+    h2 {
+        color: white;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media (min-width: breakpoints.$breakpoint-desktop) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    h2 {
+        margin-top: 40px;
+
+        @media (min-width: breakpoints.$breakpoint-tablet) {
+            margin-top: 64px;
+        }
+    }
+
+    p {
+        opacity: 0.75;
+    }
+
+    img {
+        width: 172px;
+        height: auto;
+
+        @media (min-width: breakpoints.$breakpoint-tablet) {
+            width: 197px;
+        }
+
+        @media (min-width: breakpoints.$breakpoint-desktop) {
+            position: absolute;
+            width: 410px;
+            bottom: -27px;
+            left: 100px;
+        }
+    }
+
+    a {
+        margin: 40px 0 0;
+    }
+}

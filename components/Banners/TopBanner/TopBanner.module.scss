@@ -7,8 +7,12 @@
     color: colors.$white;
     height: 645px;
     margin-bottom: 40px;
-    background: #141414 url('../../../public/background-mobile.png') no-repeat
-        bottom center;
+
+    background-color: #141414;
+    background-image: url('../../../public/background-mobile.png');
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
 
     .overline,
     p {
