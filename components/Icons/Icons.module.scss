@@ -1,0 +1,5 @@
+@use 'colors.module' as colors;
+
+.iconButton:hover path {
+    fill: colors.$orange-dark;
+}
