@@ -3,26 +3,34 @@
 button.solid,
 button.outline,
 button.link {
-    padding: 1.1rem 2.3rem;
-    margin: 2rem;
-    margin-left: 0;
-    min-width: 160px;
-    height: 48px;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 3rem;
+    padding: 0 1.25rem;
+    margin: 2.3rem 0;
+    letter-spacing: 1px;
 }
 
-.solid {
+button.solid {
+    min-width: 7.5rem;
+    text-align: center;
     background-color: colors.$orange-dark;
     color: colors.$white;
+    transition: background-color 200ms ease-out;
     &:hover {
         background-color: colors.$orange-light;
     }
 }
 
-.outline {
+button.outline {
+    min-width: 7.5rem;
+    text-align: center;
     background-color: transparent;
     outline: 1px solid black;
     outline-color: colors.$black;
     outline-offset: -1px;
+    transition: color 200ms ease-out, background-color 200ms ease-out;
     &:hover {
         background-color: colors.$black;
         color: colors.$white;
@@ -32,11 +40,12 @@ button.link {
     }
 }
 
-.link {
+button.link {
     background: none;
-    padding-right: 20px;
+    padding-right: 1.25rem;
     position: relative;
     padding-left: 0;
+    transition: color 200ms ease-out;
     &:after {
         content: url('../../public/arrow.svg');
         display: block;
@@ -44,9 +53,9 @@ button.link {
         height: 10px;
         position: absolute;
         right: 0;
-        top: calc(50% - 5px);
+        top: calc(50% - 7px);
     }
     &:hover {
-        opacity: 0.75;
+        color: colors.$orange-dark;
     }
 }
