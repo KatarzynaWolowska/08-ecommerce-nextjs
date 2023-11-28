@@ -3,34 +3,41 @@
 
 .categoryList {
     list-style: none;
-    margin-bottom: 65px;
+    margin: 60px 0 100px;
 
     li {
         width: 100%;
         position: relative;
         text-align: center;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
+        margin: 40px 0;
+        isolation: isolate;
 
-        .grayBox {
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
             background-color: colors.$bg-secondary;
             height: 204px;
+            width: 100%;
             border-radius: 8px;
-            padding-top: 110px;
-            margin-top: -80px;
+            z-index: -1;
         }
 
         .photoBox {
             height: 160px;
-
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            margin-bottom: 40px;
+            position: relative;
 
             img {
                 &.photo {
                     transition: transform ease 300ms;
-                    z-index: 1;
                 }
                 &.shadow {
                     position: absolute;
