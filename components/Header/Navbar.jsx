@@ -1,7 +1,7 @@
 import colors from '../../styles/colors.module.scss'
+import Logo from './Logo'
 import Wrapper from '@/components/Wrapper/Wrapper'
 import ButtonBasket from './ButtonBasket'
-import Logo from './Logo'
 
 const Navbar = () => {
     return (
