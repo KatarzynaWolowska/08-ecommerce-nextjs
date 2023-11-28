@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+
 import audiophile from '../../public/audiophile.svg'
 
 const Logo = () => {
