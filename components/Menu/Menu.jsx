@@ -6,22 +6,22 @@ const Menu = () => {
         <nav className={styles.menu}>
             <ul>
                 <li>
-                    <Link href='/'>
+                    <Link href='/' className={styles.link}>
                         <p>Home</p>
                     </Link>
                 </li>
                 <li>
-                    <Link href='/speakers'>
+                    <Link href='/speakers' className={styles.link}>
                         <p>Speakers</p>
                     </Link>
                 </li>
                 <li>
-                    <Link href='/headphones'>
+                    <Link href='/headphones' className={styles.link}>
                         <p>Headphones</p>
                     </Link>
                 </li>
                 <li>
-                    <Link href='/earphones'>
+                    <Link href='/earphones' className={styles.link}>
                         <p>Earphones</p>
                     </Link>
                 </li>

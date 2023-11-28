@@ -13,11 +13,7 @@
         flex-direction: row;
     }
 
-    a:hover p {
-        color: colors.$orange-dark;
-    }
-
-    li p {
+    .link p {
         color: colors.$white;
         font-size: 0.8125rem;
         font-style: normal;
@@ -25,5 +21,9 @@
         line-height: 1.5625rem;
         letter-spacing: 0.125rem;
         text-transform: uppercase;
+    }
+
+    .link:hover p {
+        color: colors.$orange-dark;
     }
 }
