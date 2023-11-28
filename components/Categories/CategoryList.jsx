@@ -7,9 +7,9 @@ import Earphones from '../../public/category-earphones.png'
 
 const CategoryList = () => {
     const categories = [
-        { title: 'Headphones', href: './headphones', image: Headphones },
-        { title: 'Speakers', href: './speakers', image: Speakers },
-        { title: 'Earphones', href: './earphones', image: Earphones }
+        { title: 'Headphones', href: '/headphones', image: Headphones },
+        { title: 'Speakers', href: '/speakers', image: Speakers },
+        { title: 'Earphones', href: '/earphones', image: Earphones }
     ]
 
     return (
