@@ -44,10 +44,6 @@
         }
 
         &:hover {
-            button {
-                color: colors.$orange-dark;
-                transition: 0.5s;
-            }
             .photo {
                 transform: translate(0, -10px);
             }
