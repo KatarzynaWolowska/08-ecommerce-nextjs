@@ -1,5 +1,6 @@
 import Button from '@/components/Button/Button'
 import Wrapper from '@/components/Wrapper/Wrapper'
+
 import styles from './TopBanner.module.scss'
 
 const TopBanner = () => {

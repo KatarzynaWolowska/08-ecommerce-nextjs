@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "eslint-plugin-simple-import-sort": "^10.0.0",
     "next": "14.0.2",
     "react": "^18",
     "react-dom": "^18"
@@ -16,6 +17,7 @@
   "devDependencies": {
     "eslint": "^8",
     "eslint-config-next": "14.0.2",
+    "eslint-plugin-react": "^7.33.2",
     "sass": "^1.69.5"
   }
 }

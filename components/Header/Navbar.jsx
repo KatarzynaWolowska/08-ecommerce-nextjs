@@ -1,5 +1,6 @@
-import colors from '../../styles/colors.module.scss'
 import Wrapper from '@/components/Wrapper/Wrapper'
+
+import colors from '../../styles/colors.module.scss'
 import ButtonBasket from './ButtonBasket'
 import Logo from './Logo'
 

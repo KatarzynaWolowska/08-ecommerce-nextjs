@@ -1,5 +1,6 @@
-import styles from './Button.module.scss'
 import BUTTON_VARIANTS from '@/constants/ButtonVariant'
+
+import styles from './Button.module.scss'
 
 const Button = ({
     children,
