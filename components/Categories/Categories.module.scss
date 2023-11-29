@@ -1,0 +1,71 @@
+@use 'breakpoints';
+@use 'colors.module' as colors;
+
+.categoryList {
+    list-style: none;
+    margin: 60px 0 100px;
+
+    li {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        padding-bottom: 20px;
+        margin: 40px 0;
+        isolation: isolate;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: colors.$bg-secondary;
+            height: 204px;
+            width: 100%;
+            border-radius: 8px;
+            z-index: -1;
+        }
+
+        .photoBox {
+            height: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 40px;
+            position: relative;
+
+            img {
+                &.photo {
+                    transition: transform ease 300ms;
+                }
+                &.shadow {
+                    position: absolute;
+                    top: 90px;
+                }
+            }
+        }
+
+        p {
+            padding-bottom: 0;
+        }
+
+        &:hover {
+            .photo {
+                transform: translate(0, -10px);
+            }
+            .shadow {
+                transform: scale(1.05);
+                opacity: 0.9;
+            }
+        }
+    }
+}
+
+@media (min-width: breakpoints.$breakpoint-tablet) {
+    .categoryList {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}
