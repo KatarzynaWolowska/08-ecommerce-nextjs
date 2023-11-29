@@ -10,6 +10,11 @@
     background: #141414 url('../../public/background-mobile.png') no-repeat
         bottom center;
 
+    .column {
+        max-width: 400px;
+        margin: auto;
+    }
+
     .overline,
     p {
         color: colors.$gray;
@@ -24,6 +29,8 @@
 
         .column {
             width: 40%;
+            max-width: none;
+            margin: 0;
         }
     }
 }
