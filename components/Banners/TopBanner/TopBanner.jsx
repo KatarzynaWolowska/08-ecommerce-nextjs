@@ -13,7 +13,7 @@ const TopBanner = () => {
                         Experience natural, lifelike audio and exceptional build
                         quality made for the passionate music enthusiast.
                     </p>
-                    <Button>See product</Button>
+                    <Button href='/'>See product</Button>
                 </div>
             </Wrapper>
         </section>
