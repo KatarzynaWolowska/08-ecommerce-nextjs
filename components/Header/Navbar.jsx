@@ -1,9 +1,22 @@
-import colors from '../../styles/colors.module.scss'
+'use client'
+
+import { useState } from 'react'
+
 import Wrapper from '@/components/Wrapper/Wrapper'
-import ButtonBasket from './ButtonBasket'
+
+import Cart from '../Cart/Cart'
+import colors from '../../styles/colors.module.scss'
 import Logo from '../Logo/Logo'
 
+import ButtonBasket from './ButtonBasket'
+import styles from './Navbar.module.scss'
+
 const Navbar = () => {
+    const [showCart, setShowCart] = useState(false)
+
+    const toggleCart = () => {
+        setShowCart(!showCart)
+    }
     return (
         <header
             style={{
@@ -12,14 +25,10 @@ const Navbar = () => {
                 background: colors.bgDark
             }}>
             <Wrapper>
-                <div
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'space-between',
-                        alignItems: 'center'
-                    }}>
+                <div className={styles.container}>
                     <Logo />
-                    <ButtonBasket />
+                    <ButtonBasket onClick={toggleCart} />
+                    {showCart && <Cart showCart={showCart} />}
                 </div>
             </Wrapper>
         </header>
